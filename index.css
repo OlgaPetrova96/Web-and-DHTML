@@ -1,0 +1,85 @@
+body
+{
+    background-image: url(https://goo.gl/t7BmsX);
+}
+
+.navigation
+{
+   list-style: none;
+}
+
+.navigation li
+{
+   float: left;
+   margin-right: 10px;
+   font-family: Arial, sans-serif;
+   font-size: 14px;
+}
+
+.navigation li a
+{
+   display: block;
+   padding: 15px 20px;
+   background: #6698ff;
+   color: #3f3f3f;
+   text-decoration: none;
+   position: relative;
+   border-radius: 15%;
+}
+
+.navigation li a:hover
+{
+   opacity: .7;
+}
+
+.my-photo
+{
+    width: 50%;
+    margin: 5% 0 0 10%;
+    border-radius: 10%;
+}
+
+.my-name
+{
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 40%;
+    font-family: Pacifico, cursive;
+    font-size: 50px;
+}
+
+.margin
+{
+    margin-left: 37%;
+}
+
+h1
+{
+    font-family: Pacifico, cursive;
+    font-size: 50px;
+    padding-top: 7%;
+    padding-left: 40%;
+    color: #fff;
+}
+
+.about-me
+{
+    width: 40%;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 30%;
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+}
+
+.photo
+{
+    width: 23%;
+    padding: 5px;
+}
+
+.galery
+{
+    text-align: justify;
+    padding: 6%;
+}
