@@ -3,73 +3,127 @@ body
     background-image: url(https://goo.gl/t7BmsX);
 }
 
+.page
+{
+    display: grid;
+    grid-template-areas: "header"
+                         "main";
+}
+
+header
+{
+    grid-area: header;
+}
+
+main
+{
+    grid-area: main;
+    text-align: center;
+}
+
 .navigation
 {
-   list-style: none;
+    width: 100%;
+}
+
+.navigation ul
+{
+    list-style: none;
+    position: relative;
+    margin-right: 100px;
+    display: inline-table;
 }
 
 .navigation li
 {
-   float: left;
-   margin-right: 10px;
-   font-family: Arial, sans-serif;
-   font-size: 14px;
+    float: left;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
-.navigation li a
+.navigation li:hover
 {
-   display: block;
-   padding: 15px 20px;
-   background: #6698ff;
-   color: #3f3f3f;
-   text-decoration: none;
-   position: relative;
-   border-radius: 15%;
+    background: rgba(0, 0, 0, .3);
 }
 
-.navigation li a:hover
+.navigation li
 {
-   opacity: .7;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.navigation a
+{
+    display: block; 
+    padding: 30px 20px;
+    color: #fff; 
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .my-photo
 {
     width: 50%;
-    margin: 5% 0 0 10%;
-    border-radius: 10%;
 }
 
 .my-name
 {
     color: #fff;
-    margin-top: 10px;
-    margin-left: 40%;
     font-family: Pacifico, cursive;
     font-size: 50px;
 }
 
-.margin
+.me
 {
-    margin-left: 37%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.contacts li
+{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.icon
+{
+    width: 50px;
+}
+
+.about
+{
+    width: 50%;
+}
+
+.center
+{
+    display: flex;
+    justify-content: center;
 }
 
 h1
 {
     font-family: Pacifico, cursive;
     font-size: 50px;
-    padding-top: 7%;
-    padding-left: 40%;
     color: #fff;
 }
 
 .about-me
 {
-    width: 40%;
     color: #fff;
-    margin-top: 10px;
-    margin-left: 30%;
     font-family: 'Comfortaa', cursive;
     font-size: 30px;
+}
+
+.galery
+{
+    text-align: justify;
+    padding: 6%;
 }
 
 .photo
@@ -78,8 +132,11 @@ h1
     padding: 5px;
 }
 
-.galery
+@media (max-width: 600px)
 {
-    text-align: justify;
-    padding: 6%;
+    .photo
+    {
+        width: 100%;
+        padding: 5px;
+    }
 }
